@@ -1,0 +1,12 @@
+{
+	"name": "language-jqtpl",
+	"version": "0.1.0",
+	"description": "JQTPL support for Atom.",
+	"repository": "https://github.com/mromnia/language-jqtpl",
+	"license": "MIT",
+	"engines": {
+		"atom": "*",
+		"node": "*"
+	},
+	"dependencies": {}
+}

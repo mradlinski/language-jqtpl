@@ -1,0 +1,73 @@
+'fileTypes': [
+	'jqtpl'
+]
+'name': 'JQTPL-JS'
+'patterns': [
+	{
+		'begin': '\\$\\{'
+		'captures':
+			'0':
+				'name': 'punctuation.section.embedded.js'
+		'end': '\\}'
+		'name': 'source.js.embedded.html'
+		'patterns': [
+			{
+				'include': 'source.js'
+			}
+		]
+	}
+	{
+		'begin': '\\{\\{\\/(if|each)'
+		'captures':
+			'0':
+				'name': 'punctuation.section.embedded.js'
+		'end': '\\}\\}'
+		'name': 'source.js.embedded.html'
+		'patterns': [
+			{
+				'include': 'source.js'
+			}
+		]
+	}
+	{
+		'begin': '\\{\\{\\s*(if|else|html|each)'
+		'captures':
+			'0':
+				'name': 'punctuation.section.embedded.js'
+		'end': '\\}\\}'
+		'name': 'source.js.embedded.html'
+		'patterns': [
+			{
+				'include': 'source.js'
+			}
+		]
+	}
+	{
+		'begin': '\\{\\{\\s*each\\s*\\((\\w)(,\\s*(\\w))*\\)'
+		'captures':
+			'0':
+				'name': 'punctuation.section.embedded.js'
+		'end': '\\}\\}'
+		'name': 'source.js.embedded.html'
+		'patterns': [
+			{
+				'include': 'source.js'
+			}
+		]
+	}
+	{
+		'begin': '\\{\\{\\!'
+		'beginCaptures':
+			'0':
+				'name': 'punctuation.definition.comment.begin.embedded.js'
+		'end': '\\}\\}'
+		'endCaptures':
+			'0':
+				'name': 'punctuation.definition.comment.end.embedded.js'
+		'name': 'comment.block.embedded.js'
+	}
+	{
+		'include': 'source.js'
+	}
+]
+'scopeName': 'text.js'
