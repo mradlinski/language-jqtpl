@@ -1,5 +1,5 @@
 'fileTypes': [
-	'jqtpl'
+	'js.jqtpl'
 ]
 'name': 'JQTPL-JS'
 'patterns': [

@@ -58,6 +58,19 @@
 		]
 	}
 	{
+		'begin': '\\{\\{\\s*tmpl\\s*\\('
+		'captures':
+			'0':
+				'name': 'punctuation.section.embedded.js'
+		'end': '\\)\\s*(\'|")(\\w)(\'|")\\s*\\}\\}'
+		'name': 'source.js.embedded.html'
+		'patterns': [
+			{
+				'include': 'source.js'
+			}
+		]
+	}
+	{
 		'begin': '\\{\\{\\!'
 		'beginCaptures':
 			'0':
