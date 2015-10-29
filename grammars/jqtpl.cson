@@ -62,7 +62,7 @@
 		'captures':
 			'0':
 				'name': 'punctuation.section.embedded.js'
-		'end': '\\)\\s*(\'|")(\\w)(\'|")\\s*\\}\\}'
+		'end': '\\)\\s*".*"\\s*\\}\\}'
 		'name': 'source.js.embedded.html'
 		'patterns': [
 			{
