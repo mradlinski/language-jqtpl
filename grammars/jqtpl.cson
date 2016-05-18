@@ -19,58 +19,6 @@
 		]
 	}
 	{
-		'begin': '\\{\\{\\/(if|each)'
-		'captures':
-			'0':
-				'name': 'punctuation.section.embedded.js'
-		'end': '\\}\\}'
-		'name': 'source.js.embedded.html'
-		'patterns': [
-			{
-				'include': 'source.js'
-			}
-		]
-	}
-	{
-		'begin': '\\{\\{\\s*(if|else|html|each)'
-		'captures':
-			'0':
-				'name': 'punctuation.section.embedded.js'
-		'end': '\\}\\}'
-		'name': 'source.js.embedded.html'
-		'patterns': [
-			{
-				'include': 'source.js'
-			}
-		]
-	}
-	{
-		'begin': '\\{\\{\\s*each\\s*\\((\\w)(,\\s*(\\w))*\\)'
-		'captures':
-			'0':
-				'name': 'punctuation.section.embedded.js'
-		'end': '\\}\\}'
-		'name': 'source.js.embedded.html'
-		'patterns': [
-			{
-				'include': 'source.js'
-			}
-		]
-	}
-	{
-		'begin': '\\{\\{\\s*tmpl\\s*\\('
-		'captures':
-			'0':
-				'name': 'punctuation.section.embedded.js'
-		'end': '\\)\\s*".*"\\s*\\}\\}'
-		'name': 'source.js.embedded.html'
-		'patterns': [
-			{
-				'include': 'source.js'
-			}
-		]
-	}
-	{
 		'begin': '\\{\\{\\!'
 		'beginCaptures':
 			'0':
@@ -80,6 +28,31 @@
 			'0':
 				'name': 'punctuation.definition.comment.end.embedded.js'
 		'name': 'comment.block.embedded.js'
+	}
+	{
+		'match': '\\{\\{\\/(each|if)\\}\\}'
+		'captures':
+			'1':
+				'name': 'entity name function js'
+		'name': 'source.js.embedded.html'
+		'patterns': [
+			{
+				'include': 'source.js'
+			}
+		]
+	}
+	{
+		'begin': '\\{\\{'
+		'end': '\\}\\}'
+		'captures':
+			'0':
+				'name': 'punctuation.section.embedded.js'
+		'name': 'source.js.embedded.html'
+		'patterns': [
+			{
+				'include': 'source.js'
+			}
+		]
 	}
 	{
 		'include': 'text.html.basic'
